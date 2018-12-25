@@ -1,0 +1,29 @@
+<div style="margin-top:20px">
+  <input type="text" (keyup)="search($event)" placeholder="enter address" class="input">
+ 
+  <!-- <div *ngFor="let studentSource of studentSources" style="margin-top:20px">
+    <app-student [student]='studentSource._source'></app-student>
+  </div>  -->
+  <!-- <div *ngIf="studentSource?.length < 1" style="margin-top:20px">
+    <p>Not found!</p>
+  </div> -->
+</div>
+<div>
+  <table>
+      <th>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Course Name</td>
+            <td>Credit</td>
+          </tr>
+        </th>
+    
+      <tbody>
+      <tr *ngFor="let studentSource of studentSources">
+          <app-student [student]='studentSource._source'></app-student>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="container" style="width: 400px">
+	<div style="color: blue; margin-bottom: 20px">
+		<h2>{{title}}</h2>
+		<h4>{{description}}</h4>
+	</div>
+ 
+	<nav>
+		<a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+		<a routerLink="student" class="btn btn-primary active" role="button" routerLinkActive="active">Student</a>
+		<a routerLink="search" class="btn btn-primary active" role="button" routerLinkActive="active">Serarch</a>
+	</nav>
+	<router-outlet></router-outlet>
+</div>
+
